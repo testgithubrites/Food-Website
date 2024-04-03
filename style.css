@@ -1,0 +1,164 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+   scroll-behavior: smooth;
+}
+#navbar{
+   display: flex;
+   align-items: center;
+}
+#logo{
+ margin: 34px 45px;
+}
+#navbar ul{
+   display: flex;
+}
+#navbar ul li{
+   list-style-type: none;
+   font-size: 1.3rem;
+   font-family: 'Fira Sans', sans-serif;
+}
+#navbar{
+  position: relative;
+}
+#navbar ul li a{
+  color: black;
+   display: block;
+   padding: 3px 22px;
+   text-decoration: none;
+}
+#navbar ul li a:hover{
+  color:white;
+  background-color:dimgrey;
+   display: block;
+   padding: 3px 22px;
+   text-decoration: none;
+   border-radius: 20px;
+}
+#navbar::before{
+  content: "";
+  background-color: white;
+  position: absolute;
+  height: 80%;
+  width:100%;
+  z-index:-1;
+  opacity: 0.4;
+}
+#home{
+   display: flex;
+   flex-direction: column;
+   padding: 3px 10px;
+   height:200px;
+   justify-content:center;
+   align-items: center;
+}
+#home::before{
+   content: "";
+   position: absolute;
+   background:url(5.jpg) no-repeat center center/cover;
+   height: 50%;
+   width:100%;
+   z-index:-1;
+   opacity: 0.89;
+}
+#home h1{
+    color:black;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 3.0rem;
+}
+#home p{
+   color:red;
+   text-align: center;
+   font-size:1.4rem;
+   font-family:Arial, Helvetica, sans-serif;
+   text-indent: 0ch;
+}
+.h-primary{
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   font-size: 3.3rem;
+   padding: 12px;
+}
+#services{
+   margin:70px;
+   display: flex;
+}
+#services .box{
+   border:1px solid darkred ;
+   padding:37px;
+   margin:6px 70px;
+   border-radius: 34px;
+}
+#services .box img{
+   height:150px;
+   margin: auto;
+   display: block;
+}
+.btn{
+   padding: 6px 20px;
+   border: 2px solid white;
+   background-color:lightgrey;
+   color:black;
+   margin: 17px;
+   font-size: 1.3rem;
+   border-radius:20px;
+   cursor: pointer;
+}
+.center{
+   text-align: center;
+}
+.h-secondary{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 1.5rem;
+   padding: 12px;
+}
+.image{
+   display:block;
+   margin-left: auto;
+   margin-right: auto;
+   height: 200px;
+   padding: 30px;
+}
+#contact{
+   position: relative;
+}
+#contact::before{
+   content:"";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.7;
+   background:url(contact.jpg) no-repeat center center/cover;
+}
+footer{
+   background: black;
+   color: white;
+   padding: 10px 40px;
+}
+#contact-box input{
+   width: 100%;
+   padding: 0.5rem;
+   margin:auto;
+   border-radius: 15px;
+}
+#contact-box form{
+   width:40%;
+}
+#contact-box label{
+   font-size: 1.5rem;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#contact-box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 34px;
+}
+#contact-box textarea{
+   width: 100%;
+   padding: 0.5rem;
+   border-radius: 20px;
+}
